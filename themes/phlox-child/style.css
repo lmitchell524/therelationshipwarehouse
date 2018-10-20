@@ -11,13 +11,15 @@ Tags: light, dark, one-columns, responsive-layout, accessibility-ready
 Text Domain: phlox-child
 */
 
-/******** Home Page *********/
 
-body {
-
+#site-header {
+    color: #0a1612;
 }
 
-/*********** Home Page **********/
+#main {
+    color: #0a1612;
+}
+/**********************      Home      *********************/
 .home-hero-container {
     position: relative;
 }
@@ -98,4 +100,66 @@ body {
 .home-testimonial-author {
     font-weight: 700;
     margin-bottom: 0;
+}
+
+
+/**********************      Services      *********************/
+
+.services-hero-container {
+    position: relative;
+}
+
+.services-hero-img {
+    background-image: url('../../uploads/2018/09/servicesHero.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    opacity: .4;
+    height: 400px;
+}
+
+.services-offered-container {
+    margin: 5% 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.services-offered {
+    border: 1px solid;
+    padding: 2%;
+}
+
+.services-offered ul {
+    list-style: none;
+}
+
+.service-details-container-1, .service-details-container-2 {
+    display: flex;
+    margin-top: 2%;
+}
+
+.services-details-image-container {
+    width: 50%;
+}
+
+.services-details-image-container-2 {
+    width: 50%;
+}
+
+.services-details-image-container img, .services-details-image-container-2 img {
+    width: 75%;
+    height: 40vh;
+}
+
+.services-details-image-container-2 img {
+    float: right;
+}
+
+.services-details {
+    width: 50%;
+    display: flex;
+    align-items: center;
 }
