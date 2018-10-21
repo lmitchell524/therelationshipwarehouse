@@ -110,7 +110,7 @@ Text Domain: phlox-child
 }
 
 .services-hero-img {
-    background-image: url('../../uploads/2018/09/servicesHero.jpg');
+    background-image: url('../../uploads/2018/09/loveSign.jpeg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -139,27 +139,55 @@ Text Domain: phlox-child
 .service-details-container-1, .service-details-container-2 {
     display: flex;
     margin-top: 2%;
+    width: 95%;
+    margin: auto;
+}
+
+.service-details-container-1 {
+    margin-bottom: 15px;
+}
+
+.services-details-image-container, .services-details-image-container-2 {
+    width: 50%;
 }
 
 .services-details-image-container {
-    width: 50%;
+    margin-left: 5%;
 }
 
 .services-details-image-container-2 {
-    width: 50%;
+    margin-right: 5%;
 }
 
-.services-details-image-container img, .services-details-image-container-2 img {
+.services-details-image-container img {
     width: 75%;
-    height: 40vh;
 }
 
 .services-details-image-container-2 img {
+    width: 90%;
     float: right;
+}
+
+.service-details-container-1 .services-details {
+    margin-right: 5%;
+}
+
+.service-details-container-2 .services-details {
+    margin-left: 5%;
+}
+
+.services-subheader {
+    line-height: 1;
+    margin-bottom: 10px;
 }
 
 .services-details {
     width: 50%;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-self: center;
 }
+
+/* .services-details p {
+    width: 95%;
+} */
