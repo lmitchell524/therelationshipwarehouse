@@ -1422,7 +1422,7 @@ function auxin_get_widget_scafold( $atts, $default_atts, $shortcode_content = ''
     }
 
     // prevent nested query while placing a recent posts widget in the same post
-    if( isset( $atts['exclude'] ) ){
+    if( isset( $atts['exclude'] ) && ! empty( $atts['exclude'] ) ){
         global $post;
         if( ! empty( $post->ID ) ){
             $atts['exclude'] .= ',' . $post->ID;

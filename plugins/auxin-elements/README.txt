@@ -7,7 +7,7 @@ Tags: phlox, gallery, elementor, siteorigin, auxin, averta, auxin-elements, fram
 Requires PHP: 5.4
 Requires at least: 4.6
 Tested up to: 4.9.8
-Stable tag: 2.2.20
+Stable tag: 2.2.22
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.html
 
@@ -153,6 +153,12 @@ Bugs can be reported in our [support forums](http://support.averta.net/en/item/p
 
 
 == Changelog ==
+
+= Version 2.2.22 / 16.09.2018) =
+- [Fix]: Minor bugs fixed.
+
+= Version 2.2.21 / 02.09.2018) =
+- [Fix]: Minor bugs fixed.
 
 = Version 2.2.20 / 23.08.2018) =
 - [Fix]: Fixing some PHP notices while Elementor Pro was activated for the first time.

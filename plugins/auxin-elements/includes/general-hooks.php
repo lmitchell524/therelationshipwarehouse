@@ -2145,10 +2145,6 @@ function auxels_blog_page_templates( $result, $page_template ){
     // if template type is grid
     elseif( strpos( $page_template, 'blog-type-5' ) ){
 
-        $desktop_cnum = 4;
-        $tablet_cnum  = 3;
-        $phone_cnum   = 1;
-
         $args = array(
             'title'              => '',
             'num'                => $per_page,
@@ -2165,9 +2161,9 @@ function auxels_blog_page_templates( $result, $page_template ){
             'show_info'          => true,
             'show_readmore'      => true,
             'show_author_footer' => false,
-            'desktop_cnum'       => $desktop_cnum,
-            'tablet_cnum'        => $tablet_cnum,
-            'phone_cnum'         => $phone_cnum,
+            'desktop_cnum'       => esc_attr( auxin_get_option( 'post_index_column_number', 4 ) ),
+            'tablet_cnum'        => esc_attr( auxin_get_option( 'post_index_column_number_tablet', 2 ) ),
+            'phone_cnum'         => esc_attr( auxin_get_option( 'post_index_column_number_mobile', 1 ) ),
             'preview_mode'       => 'grid',
             'tag'                => '',
             'reset_query'        => true
@@ -2197,15 +2193,28 @@ add_filter( 'auxin_blog_page_template_archive_content', 'auxels_blog_page_templa
  */
 function auxels_add_blog_archive_custom_template_layouts( $result, $template_type_id ){
 
+    // get template type id
+    $post_loadmore_type = auxin_get_option( 'post_index_loadmore_type', '' );
+    // Use taxonomy template option if is category or tag archive page
+    if( is_category() || is_tag() ){
+        $post_loadmore_type = auxin_get_option( 'post_taxonomy_loadmore_type', '' );
+    }
+
+    // page number
+    $paged    = max( 1, get_query_var('paged'), get_query_var('page') );
+    // posts perpage
+    $per_page = get_option( 'posts_per_page' );
 
     if( 6 == $template_type_id ){
 
         $args = array(
+            'num'                           => $per_page,
             'exclude_without_media'         => esc_attr( auxin_get_option( 'exclude_without_media' ) ),
             'exclude_custom_post_formats'   => 0,
             'exclude_quote_link'            => esc_attr( auxin_get_option( 'post_exclude_quote_link_formats', 1 ) ),
             'display_like'                  => esc_attr( auxin_get_option( 'show_blog_archive_like_button', 1 ) ),
-            'loadmore_type'                 => esc_attr( auxin_get_option( 'post_index_loadmore_type', '' ) ),
+            'loadmore_type'                 => esc_attr( $post_loadmore_type ),
+            'paged'                         => $paged,
             'show_media'                    => true,
             'show_excerpt'                  => true,
             'excerpt_len'                   => esc_attr( auxin_get_option( 'blog_content_on_listing_length' ) ),
@@ -2228,10 +2237,12 @@ function auxels_add_blog_archive_custom_template_layouts( $result, $template_typ
     } elseif( 9 == $template_type_id ){
 
         $args = array(
+            'num'                           => $per_page,
             'exclude_without_media'         => esc_attr( auxin_get_option( 'exclude_without_media' ) ),
             'exclude_custom_post_formats'   => 0,
             'exclude_quote_link'            => esc_attr( auxin_get_option( 'post_exclude_quote_link_formats', 1 ) ),
-            'loadmore_type'                 => esc_attr( auxin_get_option( 'post_index_loadmore_type', '' ) ),
+            'loadmore_type'                 => esc_attr( $post_loadmore_type ),
+            'paged'                         => $paged,
             'show_media'                    => true,
             'show_excerpt'                  => true,
             'excerpt_len'                   => esc_attr( auxin_get_option( 'blog_content_on_listing_length' ) ),
@@ -2251,12 +2262,14 @@ function auxels_add_blog_archive_custom_template_layouts( $result, $template_typ
     } elseif( 8 == $template_type_id ){
 
         $args = array(
+            'num'                           => $per_page,
             'exclude_without_media'         => esc_attr( auxin_get_option( 'exclude_without_media' ) ),
             'exclude_custom_post_formats'   => 0,
             'exclude_quote_link'            => esc_attr( auxin_get_option( 'post_exclude_quote_link_formats', 1 ) ),
             'show_media'                    => true,
+            'paged'                         => $paged,
             'display_like'                  => esc_attr( auxin_get_option( 'show_blog_archive_like_button', 1 ) ),
-            'loadmore_type'                 => esc_attr( auxin_get_option( 'post_index_loadmore_type', '' ) ),
+            'loadmore_type'                 => esc_attr( $post_loadmore_type ),
             'show_excerpt'                  => true,
             'excerpt_len'                   => esc_attr( auxin_get_option( 'blog_content_on_listing_length' ) ),
             'display_title'                 => true,
@@ -2276,12 +2289,14 @@ function auxels_add_blog_archive_custom_template_layouts( $result, $template_typ
     } elseif( 7 == $template_type_id ){
 
         $args = array(
+            'num'                           => $per_page,
             'exclude_without_media'         => esc_attr( auxin_get_option( 'exclude_without_media' ) ),
             'exclude_custom_post_formats'   => 0,
             'exclude_quote_link'            => esc_attr( auxin_get_option( 'post_exclude_quote_link_formats', 1 ) ),
             'show_media'                    => true,
+            'paged'                         => $paged,
             'display_like'                  => esc_attr( auxin_get_option( 'show_blog_archive_like_button', 1 ) ),
-            'loadmore_type'                 => esc_attr( auxin_get_option( 'post_index_loadmore_type', '' ) ),
+            'loadmore_type'                 => esc_attr( $post_loadmore_type ),
             'show_excerpt'                  => true,
             'excerpt_len'                   => esc_attr( auxin_get_option( 'blog_content_on_listing_length' ) ),
             'display_title'                 => true,
@@ -2300,17 +2315,19 @@ function auxels_add_blog_archive_custom_template_layouts( $result, $template_typ
     } elseif( 5 == $template_type_id ){
 
         $args = array(
+            'num'                           => $per_page,
             'exclude_without_media'         => esc_attr( auxin_get_option( 'exclude_without_media' ) ),
             'exclude_custom_post_formats'   => 0,
             'exclude_quote_link'            => esc_attr( auxin_get_option( 'post_exclude_quote_link_formats', 1 ) ),
             'show_media'                    => true,
             'show_excerpt'                  => true,
+            'paged'                         => $paged,
             'show_info'                     => esc_attr( auxin_get_option( 'display_post_info', 1 )  ),
             'post_info_position'            => esc_attr( auxin_get_option( 'post_info_position', 'after-title' ) ),
             'show_date'                     => true,
             'display_categories'            => esc_attr( auxin_get_option( 'display_post_info_categories', 1 ) ),
             'display_like'                  => esc_attr( auxin_get_option( 'show_blog_archive_like_button', 1 ) ),
-            'loadmore_type'                 => esc_attr( auxin_get_option( 'post_index_loadmore_type', '' ) ),
+            'loadmore_type'                 => esc_attr( $post_loadmore_type ),
             'content_layout'                => esc_attr( auxin_get_option( 'post_index_column_content_layout', 'full' ) ),
             'excerpt_len'                   => esc_attr( auxin_get_option( 'blog_content_on_listing_length' ) ),
             'display_title'                 => true,
@@ -2637,3 +2654,14 @@ function auxin_custom_maintenance_page() {
 add_action( 'wp', 'auxin_custom_maintenance_page');
 
 /*-----------------------------------------------------------------------------------*/
+
+
+/**
+ * Add Subfooter and Subfooter bar to Wocommerce templates
+ */
+
+function auxin_shop_display_footer_sidebar() {
+    get_sidebar('footer');
+}
+
+add_action( 'woocommerce_sidebar', 'auxin_shop_display_footer_sidebar', 10 ); 
