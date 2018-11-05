@@ -400,7 +400,7 @@ function auxin_latest_posts_slider_callback( $atts, $shortcode_content = null ){
     // Defining default attributes
     $default_atts = array(
         'title'                 => '',
-        'slides_num'             => '10',
+        'slides_num'            => '10',
         'order_by'              => 'date',
         'order_dir'             => 'DESC',
         'post_type'             => 'post',
@@ -433,22 +433,21 @@ function auxin_latest_posts_slider_callback( $atts, $shortcode_content = null ){
 
     // Create wp_query to get pages
     $query_args = array(
-        'post_type'             => $post_type,
-        'orderby'               => $order_by,
-        'order'                 => $order_dir,
-        'offset'                => $offset,
-        'post__not_in'          => array_filter( explode( ',', $exclude ) ),
-        'post__in'              => array_filter( explode( ',', $include ) ),
-        'post_status'           => 'publish',
-        'image_size'            => 'full',
-        'posts_per_page'        => ( $exclude_without_image ? 16 : $slides_num ), // -1 causes ignoring offset
-        'ignore_sticky_posts'   => 1
+        'post_type'           => $post_type,
+        'orderby'             => $order_by,
+        'order'               => $order_dir,
+        'offset'              => $offset,
+        'posts__not_in'       =>  $exclude,
+        'include_posts__in'   => $include,
+        'post_status'         => 'publish',
+        'posts_per_page'      => $slides_num, // -1 causes ignoring offset
+        'ignore_sticky_posts' => 1
     );
 
     $post_counter = 0;
 
     $query_res = null;
-    $query_res = new WP_Query( $query_args );
+    $query_res = new WP_Query( auxin_parse_query_args( $query_args ) );
 
     // skip building slider if no post results found
     if( ! $query_res->have_posts() ){
@@ -481,7 +480,18 @@ function auxin_latest_posts_slider_callback( $atts, $shortcode_content = null ){
         if ( 'custom' == $image_from && !empty( $custom_image ) ) {
             $slide_image = auxin_get_the_resized_image( $custom_image, $width, $height, true , 100 );
         } else {
-            $slide_image = auxin_get_auto_post_thumbnail( $query_res->post->ID, $image_from, $width, $height, true, 100, true );
+            // $slide_image = auxin_get_auto_post_thumbnail( $query_res->post->ID, $image_from, $width, $height, true, 100, true );
+            $slide_image = auxin_get_the_post_responsive_thumbnail(
+                $query_res->post->ID,
+                array(
+                    'size'            => array( 'width' => $width, 'height' => $height ),
+                    'add_hw'          => false,
+                    'preloadable'     => false,
+                    'preload_preview' => true,
+                    'image_sizes'     => 'auto',
+                    'srcset_sizes'    => 'auto',
+                )
+            );
         }
 
         //skip if post doesn't have image

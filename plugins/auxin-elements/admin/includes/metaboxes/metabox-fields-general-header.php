@@ -646,10 +646,11 @@ function auxin_metabox_fields_general_header(){
                 )
             ),
             'choices'     => array(
-                'hover'     => __( 'Hover', 'auxin-elements' ),
-                'click'     => __( 'Click', 'auxin-elements' )
+                'default' => __( 'Default', 'auxin-elements' ),
+                'hover'   => __( 'Hover', 'auxin-elements' ),
+                'click'   => __( 'Click', 'auxin-elements' )
             ),
-            'default'     => 'hover'
+            'default'     => 'default'
         );
 
     }
