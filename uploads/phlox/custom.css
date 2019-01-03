@@ -6,7 +6,7 @@
 ===============================================================*/
     /* header-logo-width 
 =========================*/
-.aux-logo-header .aux-logo-anchor{ max-width:80px; }
+.aux-logo-header .aux-logo-anchor{ max-width:200px; }
 /* header-logo-max-height-type 
 =========================*/
 .aux-logo-header .aux-logo-anchor > img { max-height:85px; }
