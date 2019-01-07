@@ -415,6 +415,29 @@ section {
     width: 70%;
 }
 
+/**********************      Shop      *********************/
+
+.product {
+    display: flex;
+}
+
+.product-info {
+    width: 50%;
+}
+
+.product-title {
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+.product-author {
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+.product-price {
+    font-size: 1.5rem;
+}
 
 /**********************      Contact Us      *********************/
 
