@@ -1,5 +1,5 @@
 /*! Auxin WordPress Framework - v2.2.18 (2018-08-10)
- *  Scripts for initializing plugins 
+ *  Scripts for initializing plugins
  *  http://averta.net
  *  (c) 2014-2018 averta;
  */
@@ -1627,7 +1627,7 @@ for ( var i = 0 ; UlikeHeart.length > i; i++){
                 footerHeight       = $footer.is(":visible") ? $footer.outerHeight() : 0;
                 subfooterHeight    = $subfooter.is(":visible") ? $subfooter.outerHeight() : 0;
                 subfooterBarHeight = $subfooterBar.is(":visible") ? $subfooterBar.outerHeight() : 0;
-            
+
             if( screenWidth <= breakpoint_tablet ){
                 $('body').removeClass('aux-sticky-footer');
                 $("#main").css( "margin-bottom", "" );
@@ -1644,8 +1644,8 @@ for ( var i = 0 ; UlikeHeart.length > i; i++){
                 $footer.css( "bottom", marginFrameThickness );
                 $subfooter.css( "bottom", footerHeight + marginFrameThickness );
                 $subfooterBar.css( "bottom", footerHeight + subfooterHeight + marginFrameThickness );
-            } 
-            
+            }
+
         });
 
     }

@@ -30,7 +30,9 @@ section {
 
 .main-content {
     max-width: 1000px;
+    padding: 20px;
 }
+
 
 /**********************      Home      *********************/
 /* #home {
@@ -419,15 +421,23 @@ section {
 
 .product {
     display: flex;
+    margin-top: 50px;
+    align-items: center;
 }
 
-.product-info {
-    width: 50%;
+.product-info h4 {
+    margin-bottom: 0;
+}
+
+.product-img {
+    margin-right: 40px;
+    width: 250px;
+    height: 400px;
 }
 
 .product-title {
     font-size: 2rem;
-    margin-bottom: 0;
+    margin: 0;
 }
 
 .product-author {
@@ -437,17 +447,34 @@ section {
 
 .product-price {
     font-size: 1.5rem;
+    margin-bottom: .5rem;
+}
+
+.product-description {
+    margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 768px){
+    .product {
+        flex-direction: column;
+    }
+
+    .product-img {
+        margin-bottom: 20px;
+    }
 }
 
 /**********************      Contact Us      *********************/
 
 .contact-container {
     margin: 3% 0;
+    text-align: center;
 }
 
 .address-container {
     display: flex;
-    margin-bottom: 2%;
+    margin-bottom: 60px;
+    justify-content: center;
 }
 
 .address-city {
@@ -456,10 +483,31 @@ section {
 
 .address {
     margin-right: 5%;
+    font-size: larger;
 }
 
 .address p {
     margin: 0;
+}
+
+.phone, .email {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.phone a, .email a {
+    font-weight: normal;
+    color: #0a1612;
+}
+
+.phone a:hover, .email a:hover {
+    font-weight: normal;
+    color: #929292;
+}
+
+form {
+    width: 70%;
+    margin: auto;
 }
 
 

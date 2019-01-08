@@ -2,7 +2,7 @@
 /**
  * General hooks
  *
- * 
+ *
  * @package    Auxin
  * @author     averta (c) 2014-2018
  * @link       http://averta.net
@@ -1274,6 +1274,3 @@ function auxin_move_comment_field_to_bottom( $fields ) {
 }
 
 add_filter( 'comment_form_fields', 'auxin_move_comment_field_to_bottom' );
-
-
-
