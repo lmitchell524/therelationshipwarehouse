@@ -20,6 +20,10 @@ Text Domain: phlox-child
     color: #0a1612;
 }
 
+.aux-full-width #inner-body {
+    overflow-x: unset;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
 }
@@ -57,12 +61,13 @@ section {
     font-size: 2rem;
     text-align: center;
     position: absolute;
-    top: 45%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
     font-weight: 400;
     line-height: 1.15;
+    width: 100%;
 }
 
 .home-who-we-are-container {
@@ -158,7 +163,7 @@ section {
 }
 
 .services-hero-img {
-    background-image: url('../../uploads/2018/09/services.jpg');
+    background-image: url('../../uploads/2019/01/services.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -176,8 +181,7 @@ section {
 
 .services-offered {
     width: 32%;
-    color: #e6e6e6;
-    background: #192532;
+    background: #fafaf9;
     padding: 2%;
     display: flex;
     flex-direction: column;
@@ -185,14 +189,24 @@ section {
 }
 
 .services-offered-header {
-    font-size: 1.4em !important;
+    font-size: 2rem;
     line-height: 1;
-    margin-bottom: .6em;
+    margin-bottom: 40px;
 }
 
-/* .services-offered ul {
-    list-style: none;
-} */
+.services-details h3 {
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.services-list {
+    margin-top: 0;
+}
+
+.services-list li {
+    margin-bottom: 3px;
+}
+
 
 .session-length {
     font-size: 20px;
@@ -213,7 +227,7 @@ section {
     margin-top: 2%;
     width: 85%;
     margin: auto;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .service-details-container-1 {
@@ -225,15 +239,15 @@ section {
 }
 
 .services-details-image-container, .services-details-image-container-2 {
-    width: 40%;
+    width: 45%;
 }
 
-/* .services-details-image-container-2 {
-    margin-right: 5%;
-} */
+.services-details-image-container img {
+    width: 100%;
+}
 
 .services-details-image-container-2 img {
-    /* width: 90%; */
+    width: 100%;
     float: right;
 }
 
@@ -320,7 +334,8 @@ section {
 
 .pearl-tagline {
     text-align: center;
-    font-family: Vogue, "Raleway",arial,sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
 }
 
 .what-pearl-will-do, .contact-rox {
@@ -515,4 +530,8 @@ form {
 
 #copyright {
     /* line-height: 1; */
+}
+
+.aux-site-footer .aux-fold {
+    height: 90px;
 }

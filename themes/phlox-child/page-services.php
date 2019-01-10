@@ -50,13 +50,14 @@ get_header(); ?>
                                     </div>
                                 </div>
                             </div>
-                            <h1 class='services-offered-header'> At The Relationship Warehouse, we want to come alongside you as you experience healing, hope and freedom. Common areas of focus include: </h1>
+                            <h1 class='services-offered-header'> At The Relationship Warehouse, we want to come alongside you as you experience healing, hope and freedom.</h1>
                             <div class="service-details-container-1">
                                 <div class='services-details-image-container'>
                                     <img src="http://localhost:8888/wordpress/wp-content/uploads/2018/11/services1-274x300.jpeg" alt="services offered" width="300" height="300" class="alignnone size-medium wp-image-459" />
                                 </div>
                                 <div class="services-details">
-                                    <ul>
+                                    <h3> Common areas of focus include:</h3>
+                                    <ul class='services-list'>
                                         <li>Divorce or Separation</li>
                                         <li>Infidelity and Mistrust</li>
                                         <li>Depression and Anxiety</li>
@@ -67,13 +68,14 @@ get_header(); ?>
                                         <li>Eating Disorders</li>
                                         <li>Identity Issues</li>
                                         <li>Loneliness</li>
-                                        <li>Inability to Forgive Self or Others</li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="service-details-container-2">
                                 <div class="services-details">
-                                    <ul>
+                                    <ul class='services-list'>
+                                        <li>Inability to Forgive Self or Others</li>
+                                        <li>Inability to Forgive Self or Others</li>
                                         <li>Doubting Faith</li>
                                         <li>Addiction and Recovery</li>
                                         <li>Abortion</li>

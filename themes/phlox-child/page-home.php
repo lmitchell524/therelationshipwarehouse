@@ -15,7 +15,7 @@ get_header(); ?>
                     <div class="content" role="main"  >
                         <div class="home-hero-container">
                             <div class="home-hero-img"></div>
-                            <p class="home-tag-line">“Affordable, Christian counseling for individuals, couples and families.”</p>
+                            <p class="home-tag-line">Affordable, Christian counseling for individuals, couples and families.</p>
                         </div>
                         <section id='home' class='main-content'>
                             <div class='home-who-we-are-container'>
