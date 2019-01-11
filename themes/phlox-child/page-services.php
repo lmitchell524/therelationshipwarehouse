@@ -53,7 +53,8 @@ get_header(); ?>
                             <h1 class='services-offered-header'> At The Relationship Warehouse, we want to come alongside you as you experience healing, hope and freedom.</h1>
                             <div class="service-details-container-1">
                                 <div class='services-details-image-container'>
-                                    <img src="http://localhost:8888/wordpress/wp-content/uploads/2018/11/services1-274x300.jpeg" alt="services offered" width="300" height="300" class="alignnone size-medium wp-image-459" />
+                                    <?php $imageArray = wp_upload_dir();?>
+                                    <img src="<?php echo $imageArray["url"];?>/servicesImageLeft.jpeg" alt="services offered" width="300" height="300" class="alignnone size-medium wp-image-459" />
                                 </div>
                                 <div class="services-details">
                                     <h3> Common areas of focus include:</h3>
@@ -89,7 +90,7 @@ get_header(); ?>
                                     </ul>
                                 </div>
                                 <div class='services-details-image-container-2'>
-                                    <img src="http://localhost:8888/wordpress/wp-content/uploads/2018/11/services4-280x300.jpg" alt="services offered" width="300" height="300" class="alignnone size-medium wp-image-474" />
+                                    <img src="<?php echo $imageArray["url"];?>/servicesImageRight.jpeg" alt="services offered" width="300" height="300" class="alignnone size-medium wp-image-459" />
                                 </div>
                             </div>
                             <div class='about-us-divider'></div>
@@ -115,7 +116,7 @@ get_header(); ?>
                                     </div>
                                 </div>
                                 <div class='workshop-img'>
-                                    <img src="http://localhost:8888/wordpress/wp-content/uploads/2018/11/groupPhoto-300x169.jpg" alt="" width="300" height="169" class="alignnone size-medium wp-image-488" />
+                                    <img src="<?php echo $imageArray["url"];?>/workshops.jpeg" alt="services offered" width="300" height="300" class="alignnone size-medium wp-image-459" />
                                 </div>
                             </div>
                         </section>

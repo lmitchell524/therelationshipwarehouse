@@ -37,6 +37,11 @@ section {
     padding: 20px;
 }
 
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
 /**********************      Home      *********************/
 /* #home {
@@ -168,7 +173,8 @@ section {
     background-position: center;
     background-size: cover;
     width: 100%;
-    height: 400px;
+    height: 500px;
+    opacity: .6;
 }
 
 .services-offered-container {
@@ -196,7 +202,8 @@ section {
 
 .services-details h3 {
     margin: 0;
-    font-size: 1.25rem;
+    font-size: 1.35rem;
+    font-weight: 500;
 }
 
 .services-list {
@@ -211,11 +218,13 @@ section {
 .session-length {
     font-size: 20px;
     border: 1px solid;
-    margin-top: 10px;
+    margin: 10px auto;
+    width: 85%;
+    padding: 5px;
 }
 
 .session-length a {
-    color: white;
+    color: #0a1612;
 }
 
 .session-length a:hover {
@@ -225,7 +234,7 @@ section {
 .service-details-container-1, .service-details-container-2 {
     display: flex;
     margin-top: 2%;
-    width: 85%;
+    width: 90%;
     margin: auto;
     justify-content: space-between;
 }
@@ -239,7 +248,7 @@ section {
 }
 
 .services-details-image-container, .services-details-image-container-2 {
-    width: 45%;
+    width: 50%;
 }
 
 .services-details-image-container img {
@@ -262,7 +271,7 @@ section {
 }
 
 .services-details {
-    width: 50%;
+    /* width: 50%; */
     display: flex;
     flex-direction: column;
     align-self: center;
@@ -296,11 +305,12 @@ section {
 
 .workshop-btn-container{
     text-align: center;
+    margin-top: 30px;
 }
 
 .workshop-btn {
     background-color: #1a2930;
-    padding: 1.5%;
+    padding: 10px 20px;
     color: #dddede;
     font-weight: 600;
 }
@@ -335,18 +345,22 @@ section {
 .pearl-tagline {
     text-align: center;
     font-size: 2.5rem;
-    margin-bottom: 40px;
+    margin-bottom: 100px;
 }
 
-.what-pearl-will-do, .contact-rox {
-    font-size: 1.4rem;
+.pearl-question-container {
+    margin-bottom: 100px;
 }
 
-/* .pearl-question-container {
-    width: 90%;
-    margin: auto;
-    padding: 40px 0;
-} */
+@media only screen and (max-width: 768px){
+    .pearl-question-container, .pearl-tagline {
+        margin-bottom: 30px;
+    }
+
+    ..pearl-testimonial-container {
+        margin: 30px auto;
+    }
+}
 
 .pearl-questions {
     border-bottom: 1px solid #e4e4e4;
@@ -377,10 +391,31 @@ section {
     margin-left: 60px;
 }
 
+.pearl-side-by-side-img-left, .pearl-side-by-side-img-right {
+    display: flex;
+}
+
+.pearl-img-container {
+    width: 75%;
+}
+
+.pearl-side-by-side-text-container {
+    background-color: #ede1d1;
+    text-align: center;
+    align-items: center;
+    display: flex;
+}
+
+.pearl-side-by-side-text {
+    font-size: 1.4rem;
+    width: 70%;
+    margin: auto;
+}
+
 .pearl-testimonial-container {
     text-align: center;
     width: 80%;
-    margin: 40px auto;
+    margin: 100px auto;
     font-size: 1.25em;
     clear: both;
 }
@@ -390,10 +425,22 @@ section {
     padding: 10px;
     background-color: #fd728a;
     color: white;
+    margin-top: 15px;
 }
 
 .pearl-button a {
     color: white;
+}
+
+.rox-email {
+    color: #0a1612;
+    display: inline-block;
+    font-weight: 500;
+}
+
+.rox-email:hover {
+    opacity: .7;
+    color: #0a1612;
 }
 
 /**********************      About Us      *********************/
@@ -518,6 +565,10 @@ section {
 .phone a:hover, .email a:hover {
     font-weight: normal;
     color: #929292;
+}
+
+.form-instructions {
+    text-align: center;
 }
 
 form {

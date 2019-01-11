@@ -36,7 +36,7 @@ get_header(); ?>
                             <div class='about-us-divider'></div>
                             <div class='bio-container bio-even'>
                                 <div class='bio'>
-                                    <h3 class='bio-name'>Roxanne Grimes</h3>
+                                    <h3 class='bio-name'>Roxanna Grimes</h3>
                                     Roxanna Grimes has an MA in Religious Education with an emphasis on the spiritual development of children. She is trained in Drug and Alcohol Addiction and Codependence Counseling. Roxanna also utilizes Deep Healing and Prayer to heal memories and past spiritual/emotional wounds. Her passion is to help women make an authentic connection with God to form a secure attachment and dependency on Him instead of people, places, and things. She is skilled at helping women learn to receive the love of God and learn to love their own self in the image of God.
                                 </div>
                                 <div class='bio-img'>
@@ -85,8 +85,7 @@ get_header(); ?>
                             <div class='bio-container bio-even'>
                                 <div class='bio'>
                                     <h3 class='bio-name'>Jaclyn Lorenzo</h3>
-                                    Jaclyn Lorenzo earned a Master's Degree in Christian Counseling from Gateway Seminary in California. She is trained in cognitive behavioral therapy, intercultural counseling, premarital counseling through prepare and enrich. In addition to this, Jaclyn has gone through and can facilitate The Pearl Workshop and Codependence Recovery Workbook.
-                                </div>
+                                    Jaclyn Lorenzo earned a Master’s Decree in Christian Counseling from Gateway Seminary in California.  She is trained in cognitive behavioral therapy, intercultural counseling, and premarital counseling through Prepare/Enrich.  In addition to this, Jaclyn also helps facilitate The Pearl Workshop and Codependence Recovery Workbook at the Warehouse.                                </div>
                                 <div class='bio-img'>
                                     <img src="http://localhost:8888/wordpress/wp-content/uploads/2018/11/JaclynLorenzo-232x300.jpg" alt="" width="232" height="300" class="alignnone size-medium wp-image-482" />
                                 </div>
@@ -94,15 +93,27 @@ get_header(); ?>
                             <div class='about-us-divider'></div>
                             <div class='bio-container'>
                                 <div class='bio'>
-                                    <h3 class='bio-name'>Darlene</h3>​
-                                    Lorem Ipsum
+                                    <h3 class='bio-name'>Teresa Smith</h3>
+                                    Teresa is a licensed Marriage and Family Therapist with experience counseling couples, families, addiction, dual diagnosis, depression, ADHD, bipolar, reunification, and children from level 12 group homes.  She has experience in leading process groups, teaching Anger Management, and Relapse Prevention.  Teresa is currently completing EMDR training at Hope International University.  Teresa has been married to her husband Rick for 33 years, they have 3 married sons and 4 grandbabies.
                                 </div>
                                 <div class='bio-img'>
-                                    <img src="http://localhost:8888/wordpress/wp-content/uploads/2018/11/Darlene-232x300.jpg" alt="" width="232" height="300" class="alignnone size-medium wp-image-480" />
+                                    <?php $imageArray = wp_upload_dir();?>
+                                    <img src="<?php echo $imageArray["url"];?>/TeresaSmith.PNG" alt="services offered" width="232" height="300" class="alignnone size-medium wp-image-459" />
+                                </div>
+                            </div>
+                                <div class='about-us-divider'></div>
+                                <div class='bio-container bio-even'>
+                                    <div class='bio'>
+                                        <h3 class='bio-name'>Darlene</h3>​
+                                        Dorene serves as the Office Manager at the Warehouse, assisting with the client intake and scheduling process, as well as providing administrative support and assisting with workshops.  Dorene has a professional background as a pharmacy technician, and also previously worked in sales for Gallo wines.  Dorene is married with five children, and is passionate about helping people get the help that they need at the Warehouse.
+
+                                    </div>
+                                    <div class='bio-img'>
+                                        <img src="http://localhost:8888/wordpress/wp-content/uploads/2018/11/Darlene-232x300.jpg" alt="" width="232" height="300" class="alignnone size-medium wp-image-480" />
+                                    </div>
                                 </div>
                             </div>
                         </section>
-
                     </div><!-- end content -->
                 </div><!-- end primary -->
             </div><!-- end container -->

@@ -30,7 +30,7 @@ get_header(); ?>
                                 <div class='phone'>Phone:<a href="tel:+1-949-482-2233"> 949-482-2233</a></div>
                                 <div class='email'>Email: <a href="mailto:info@therelationshipwarehouse.com"> info@therelationshipwarehouse.com</a></div>
                             </div>
-                            <p>Please fill out this form to schedule an appointment, volunteer, or ask a question. We look forward to hearing from you!</p>
+                            <p class='form-instructions'>Please fill out this form to schedule an appointment, volunteer, or ask a question. We look forward to hearing from you!</p>
                             <p><?php echo do_shortcode('[contact-form-7 id="572" title="Contact form 1"]'); ?></p>
                         </section>
                     </div><!-- end content -->

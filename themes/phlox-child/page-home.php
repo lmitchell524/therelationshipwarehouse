@@ -46,6 +46,7 @@ get_header(); ?>
                             <div class='home-testimonial-container'>
                                 <p class="dashicons dashicons-format-quote home-quote-icon"></p>
                                 <p class='home-testimonial'>The Relationship Warehouse helped me to realize my worth and value and encouraged me to make positive decisions for myself and my wellbeing and growth in Christ. I am forever indebted to their staff for the life changing counsel and healing I received.</p>
+                                <p class="dashicons dashicons-format-quote home-quote-icon quote-rotate"></p>
                                 <p class='home-testimonial-author'>Brenda W</p>
                             </div>
                         </section>
