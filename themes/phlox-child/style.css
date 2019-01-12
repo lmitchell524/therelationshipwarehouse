@@ -235,7 +235,7 @@ section {
     display: flex;
     margin-top: 2%;
     width: 90%;
-    margin: auto;
+    /* margin: auto; */
     justify-content: space-between;
 }
 
@@ -396,7 +396,7 @@ section {
 }
 
 .pearl-img-container {
-    width: 75%;
+    width: 100%;
 }
 
 .pearl-side-by-side-text-container {
@@ -446,7 +446,7 @@ section {
 /**********************      About Us      *********************/
 
 .about-us-hero-img {
-    background-image: url('../../uploads/2018/09/aboutUsGroupPhoto.jpg');
+    background-image: url('../../uploads/2019/01/aboutHero.jpg');
     background-repeat: no-repeat;
     background-position: unset;
     margin-bottom: 20px;
@@ -479,6 +479,23 @@ section {
     width: 70%;
 }
 
+
+
+@media only screen and (max-width: 980px){
+    .bio-name {
+        /* font-size: 1.4em; */
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .bio-container {
+        flex-direction: column-reverse;
+    }
+
+    .bio-even {
+        flex-direction: column-reverse;
+    }
+}
 /**********************      Shop      *********************/
 
 .product {
@@ -583,6 +600,28 @@ form {
     /* line-height: 1; */
 }
 
-.aux-site-footer .aux-fold {
+#sitefooter {
+    padding: 15px 0;
     height: 90px;
 }
+
+.aux-sticky-footer #main {
+    box-shadow: none;
+}
+
+.aux-site-footer {
+    width: 100%;
+}
+
+.aux-site-footer .aux-end {
+    display: block !important;
+}
+/*
+.aux-resp.aux-hd .aux-fold, .aux-resp.aux-hd .aux-fold-width, .aux-resp.aux-hd .aux-boxed-container>.aux-container {
+    display: flex;
+    justify-content: space-between;
+} */
+
+/* .aux-container aux-fold aux-float-wrapper {
+    width: 100%;
+} */

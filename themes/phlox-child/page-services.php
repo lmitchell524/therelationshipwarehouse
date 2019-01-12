@@ -49,6 +49,11 @@ get_header(); ?>
                                         <a href='#workshops'>Available Workshops</a>
                                     </div>
                                 </div>
+                                <div class="services-offered">
+                                    <h3 class="services-offered-header">Grief & Trauma Treatment</h3>
+                                    <div>The Relationship Warehouse offers EMDR treatment where indicated, a pyschotherapy treatment that enables you to heal from the symptoms and emotional stress that are a result of disturbing life experiences.</div>
+                                    <div class='session-length'>50 minute sessions</div>
+                                </div>
                             </div>
                             <h1 class='services-offered-header'> At The Relationship Warehouse, we want to come alongside you as you experience healing, hope and freedom.</h1>
                             <div class="service-details-container-1">

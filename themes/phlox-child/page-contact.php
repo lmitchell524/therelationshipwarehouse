@@ -18,8 +18,8 @@ get_header(); ?>
                                 <div class='address-container'>
                                     <div class='address'>
                                         <h4 class='address-city'>Riverside</h4>
-                                        <p>3752 Elizabeth Street Unit C</p>
-                                        <p> Riverside, CA 92506</p>
+                                        <p>7119 Indiana Avenue</p>
+                                        <p>Riverside, CA 92504</p>
                                     </div>
                                     <div class='address'>
                                         <h4 class='address-city'>Costa Mesa</h4>

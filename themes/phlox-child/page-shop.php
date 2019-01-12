@@ -36,7 +36,7 @@ get_header(); ?>
                                 </div>
                                 <div class='product'>
                                     <?php $imageArray = wp_upload_dir();?>
-                                    <img class='product-img' src="<?php echo $imageArray["url"];?>/pearl.jpg" />
+                                    <img class='product-img' src="<?php echo $imageArray["url"];?>/Pearl.jpg" />
                                     <div class='product-info'>
                                         <h1 class='product-title'>Pearl</h1>
                                         <h2 class='product-author'>By: Roxanna Dian Grimes</h2>
