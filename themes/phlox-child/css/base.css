@@ -1076,7 +1076,7 @@ ul.large li {
 /* decorations */
 ul.nostyle, ol.nostyle {
   margin-left: 0;
-  list-style: none;
+  /* list-style: none; */
 }
 
 ul.bordered li, ol.bordered li {
@@ -1223,9 +1223,9 @@ input[type="button"].aux-outline,
 a.aux-black.button.aux-outline, button.aux-black.aux-outline,
 input.aux-black[type="button"].aux-outline,
 .aux-black.aux-button.aux-outline {
-  box-shadow: 0 0 0 1px #3D3D3D inset;
+  box-shadow: 0 0 0 1px #2a2a2a inset;
   background-color: transparent !important;
-  color: #3D3D3D;
+  color: #2a2a2a;
 }
 a.aux-black.button.aux-outline:hover, button.aux-black.aux-outline:hover,
 input.aux-black[type="button"].aux-outline:hover,
@@ -1235,7 +1235,7 @@ input.aux-black[type="button"].aux-outline:hover,
 a.aux-black.button.aux-outline .aux-overlay::after, button.aux-black.aux-outline .aux-overlay::after,
 input.aux-black[type="button"].aux-outline .aux-overlay::after,
 .aux-black.aux-button.aux-outline .aux-overlay::after {
-  background-color: #3D3D3D;
+  background-color: #2a2a2a;
 }
 a.aux-white.button.aux-outline, button.aux-white.aux-outline,
 input.aux-white[type="button"].aux-outline,
@@ -1257,7 +1257,7 @@ input.aux-white[type="button"].aux-outline .aux-overlay::after,
 a.aux-masala.button.aux-outline, button.aux-masala.aux-outline,
 input.aux-masala[type="button"].aux-outline,
 .aux-masala.aux-button.aux-outline {
-  box-shadow: 0 0 0 1px #3D3D3D inset;
+  box-shadow: 0 0 0 1px #2a2a2a inset;
   background-color: transparent !important;
   color: #3D3D3D;
 }
@@ -1269,7 +1269,7 @@ input.aux-masala[type="button"].aux-outline:hover,
 a.aux-masala.button.aux-outline .aux-overlay::after, button.aux-masala.aux-outline .aux-overlay::after,
 input.aux-masala[type="button"].aux-outline .aux-overlay::after,
 .aux-masala.aux-button.aux-outline .aux-overlay::after {
-  background-color: #3D3D3D;
+  background-color: #2a2a2a;
 }
 a.aux-dark-gray.button.aux-outline, button.aux-dark-gray.aux-outline,
 input.aux-dark-gray[type="button"].aux-outline,
@@ -2557,7 +2557,7 @@ input[type="button"].aux-icon-over:hover .aux-icon, .rtl
 a.button.aux-black, button.aux-black,
 input[type="button"].aux-black,
 .aux-button.aux-black {
-  background-color: #3D3D3D;
+  background-color: #2a2a2a;
   text-shadow: 0 2px 0 #292929;
   color: white;
 }

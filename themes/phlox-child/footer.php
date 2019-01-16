@@ -16,6 +16,7 @@ do_action( 'auxin_before_the_footer' ); ?>
 
 <!-- outputs by wp_footer -->
 <?php wp_footer(); ?>
+
 <!-- end wp_footer -->
 </body>
 </html>

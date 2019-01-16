@@ -29,7 +29,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 section {
-    margin: 0 auto 70px auto;
+    margin: 0 auto 30px auto;
 }
 
 .main-content {
@@ -108,7 +108,7 @@ section {
 .home-get-started {
     background-color: #fafaf9;
     padding: 25px;
-    width: 25%;
+    width: 30%;
 }
 
 .home-get-started a {
@@ -144,6 +144,10 @@ section {
     transform: rotate(180deg);
 }
 
+/* .dashicons-format-quote:before {
+    content: "\f122";
+} */
+
 .home-testimonial-container {
     text-align: center;
     width: 80%;
@@ -158,6 +162,37 @@ section {
 .home-testimonial-author {
     font-weight: 700;
     margin-bottom: 0;
+}
+
+.address-container-home {
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.address-home {
+    margin-top: 80px;
+    font-size: 1.2rem;
+}
+
+.address-home p {
+    margin: 0;
+}
+
+.phone-home {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.phone-home a {
+    color: #0a1612;
+}
+
+.aux-logo-header .aux-logo-anchor {
+    max-width: 160px !important;
+}
+
+.aux-logo-header .aux-logo-anchor > img {
+    padding: 5px !important;
 }
 
 
@@ -186,9 +221,9 @@ section {
 }
 
 .services-offered {
-    width: 32%;
+    width: 30%;
     background: #fafaf9;
-    padding: 2%;
+    padding: 1.5%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -303,13 +338,22 @@ section {
     width: 100%;
 }
 
+.workshop-resource-list {
+    list-style: circle;
+    padding-left: 30px;
+}
+
+.workshop-resource-list li {
+    margin-bottom: 0px;
+}
+
 .workshop-btn-container{
     text-align: center;
     margin-top: 30px;
 }
 
 .workshop-btn {
-    background-color: #1a2930;
+    background-color: #2a2a2a;
     padding: 10px 20px;
     color: #dddede;
     font-weight: 600;
@@ -318,6 +362,11 @@ section {
 .workshop-btn:hover {
     opacity: .8;
     color: #dddede;
+}
+
+
+.workshop-cost {
+    font-weight: 500;
 }
 
 
@@ -345,33 +394,22 @@ section {
 .pearl-tagline {
     text-align: center;
     font-size: 2.5rem;
-    margin-bottom: 100px;
+    margin-bottom: 90px;
 }
 
 .pearl-question-container {
     margin-bottom: 100px;
-}
-
-@media only screen and (max-width: 768px){
-    .pearl-question-container, .pearl-tagline {
-        margin-bottom: 30px;
-    }
-
-    ..pearl-testimonial-container {
-        margin: 30px auto;
-    }
+    font-size: 1.5rem;
 }
 
 .pearl-questions {
-    border-bottom: 1px solid #e4e4e4;
+    /* border-bottom: 1px solid #e4e4e4; */
     width: auto;
     display: block;
-    clear: both;
-    float: left;
-    width: auto;
+    text-align: center;
 }
 
-.align-right {
+/* .align-right {
     float: right;
 }
 
@@ -389,7 +427,7 @@ section {
 
 .pearl-margin-left-md {
     margin-left: 60px;
-}
+} */
 
 .pearl-side-by-side-img-left, .pearl-side-by-side-img-right {
     display: flex;
@@ -408,7 +446,6 @@ section {
 
 .pearl-side-by-side-text {
     font-size: 1.4rem;
-    width: 70%;
     margin: auto;
 }
 
@@ -422,10 +459,14 @@ section {
 
 .pearl-button-container {
     display: inline-block;
-    padding: 10px;
+    padding: 5px 10px;
     background-color: #fd728a;
     color: white;
     margin-top: 15px;
+}
+
+.pearl-button-container:hover {
+    opacity: .7;
 }
 
 .pearl-button a {
@@ -464,6 +505,10 @@ section {
     width: 100%;
 }
 
+.about-headers {
+    font-size: 2.5rem;
+}
+
 .bio-container {
     display: flex;
     justify-content: space-between;
@@ -485,7 +530,7 @@ section {
     .bio-name {
         /* font-size: 1.4em; */
         text-align: center;
-        margin: 10px 0;
+        margin: 5px 0;
     }
 
     .bio-container {
@@ -497,6 +542,9 @@ section {
     }
 }
 /**********************      Shop      *********************/
+.shop-content-container {
+    margin-bottom: 50px;
+}
 
 .product {
     display: flex;
@@ -531,6 +579,22 @@ section {
 
 .product-description {
     margin-bottom: 30px;
+}
+
+.add-to-cart{
+    padding: 12px 32px;
+    margin-right: 5px;
+    background-color: #2a2a2a;
+    color: white;
+    vertical-align: top;
+    font-size: .8125em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.add-to-cart:hover {
+    color: white;
+    opacity: .6;
 }
 
 @media only screen and (max-width: 768px){
@@ -616,12 +680,160 @@ form {
 .aux-site-footer .aux-end {
     display: block !important;
 }
-/*
-.aux-resp.aux-hd .aux-fold, .aux-resp.aux-hd .aux-fold-width, .aux-resp.aux-hd .aux-boxed-container>.aux-container {
-    display: flex;
-    justify-content: space-between;
-} */
 
-/* .aux-container aux-fold aux-float-wrapper {
-    width: 100%;
-} */
+.home-donate-button {
+    /* background-color: #1A1A1A; */
+    color: white;
+    padding: 10px 25px;
+    position: absolute;
+    /* box-shadow: 5px 5px 5px #fafaf9; */
+    width: 50px;
+    bottom: -1.5%;
+    left: 3%;
+}
+
+.home-donate-button .donate {
+    border-radius: 25px;
+    box-shadow: 2px 3px 3px #aeaeae;
+    background-color: #2a2a2a;
+}
+
+.services-donate-button {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.services-donate-button .donate {
+    box-shadow: 2px 3px 3px #aeaeae;
+    background-color: #2a2a2a;
+    padding: 15px 40px;
+    font-size: 1.2rem;
+}
+
+.home-donate-button:hover {
+    opacity: .95;
+    cursor: pointer;
+}
+
+.donate-contact {
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 768px){
+    .pearl-question-container, .pearl-tagline {
+        margin-bottom: 30px;
+    }
+
+    .pearl-testimonial-container {
+        margin: 30px auto;
+    }
+
+    .home-get-started-container {
+        flex-direction: column;
+    }
+
+    .home-get-started {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .home-donate-button {
+        bottom: -3%;
+        left: -5%;
+    }
+
+    .services-offered {
+        width: 100%;
+        margin-bottom: 25px;
+        padding: 5%;
+    }
+
+    .services-offered-container {
+        flex-direction: column;
+    }
+
+    .service-details-container-1, .service-details-container-2 {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .services-details-image-container, .services-details-image-container-2 {
+        width: 100%;
+    }
+
+    .service-details-container-2 {
+        margin-top: -15px;
+    }
+
+    .services-details {
+        text-align: center;
+    }
+
+    .service-details-container-2 .services-details {
+        margin-left: 0;
+    }
+
+    .service-details-container-1 {
+        margin: 0;
+    }
+
+    .workshop-container {
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .workshop-img {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .work-shops {
+        width: 100%;
+    }
+
+    .workshop-header {
+        text-align: center;
+    }
+
+    .pearl-side-by-side-img-left, .pearl-side-by-side-img-right {
+        flex-direction: column;
+    }
+
+    .pearl-side-by-side-text-container {
+        padding: 40px 0;
+    }
+
+    .pearl-side-by-side-text {
+        width: 85%;
+        font-size: 1.1rem;
+    }
+
+    .bio {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .about-us-divider {
+        display: none;
+    }
+
+    .about-us-hero-img {
+        height: 215px;
+    }
+
+    .aux-site-footer .aux-end {
+        margin-left: 0;
+    }
+
+    .aux-resp.aux-hd .aux-fold {
+        padding: 0 5px;
+    }
+
+    .site-header-section .aux-menu-depth-0>.aux-item-content {
+        height: 55px;
+    }
+}

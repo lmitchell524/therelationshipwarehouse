@@ -22,7 +22,7 @@ get_header(); ?>
                             <div class='meet-the-founders'>
                                 <p>The Relationship Warehouse is a private, 501(c)(3) non-profit counseling and pastoral care center serving individuals, couples and families in Orange County and throughout the Inland Empire and Los Angeles.  </p>
                                 <p>We are a safe place to explore the things that hold you back from freedom and joy. We are a loving place to encounter God in a fresh way. We are a caring and diligent place to help you expose your wounds and start the process of healing. We are a place to equip you with effective tools for continued healing and connection with the ultimate Healer, Jesus Christ. </p>
-                                <p>Amongst our experienced counselors and para-professional counselors are skills such as Cognitive-Behavioral Therapy, Solution-Oriented Brief Therapy, Drug and Alcohol Addiction counseling, Codependence counseling, Deep-Healing and Soul Care, Grief and Loss, and Pastoral Care. </p>
+                                <p>Amongst our experienced counselors and para-professional counselors are skills such as Cognitive-Behavioral Therapy, Solution-Oriented Brief Therapy, EMDR Treatment, Drug and Alcohol Addiction counseling, Codependence counseling, Deep-Healing and Soul Care, Grief and Loss, and Pastoral Care.</p>
                             </div>
                             <div class='about-us-divider'></div>
                             <div class='bio-container'>
@@ -104,20 +104,27 @@ get_header(); ?>
                                     <img src="<?php echo $imageArray["url"];?>/TeresaSmith.PNG" alt="services offered" width="232" height="300" class="alignnone size-medium wp-image-459" />
                                 </div>
                             </div>
-                                <div class='about-us-divider'></div>
-                                <div class='bio-container bio-even'>
-                                    <div class='bio'>
-                                        <h3 class='bio-name'>Darlene</h3>​
-                                    <p>
-                                        Dorene serves as the Office Manager at the Warehouse, assisting with the client intake and scheduling process, as well as providing administrative support and assisting with workshops.  Dorene has a professional background as a pharmacy technician, and also previously worked in sales for Gallo wines.  Dorene is married with five children, and is passionate about helping people get the help that they need at the Warehouse.
-                                    </p>
-
-                                    </div>
-                                    <div class='bio-img'>
-                                        <img src="<?php echo $imageArray["url"];?>/Darlene.jpg" alt="services offered" width="232" height="300" class="alignnone size-medium wp-image-459" />
-                                    </div>
+                            <div class='about-us-divider'></div>
+                            <div class='bio-container  bio-even'>
+                                <div class='bio'>
+                                    <h3 class='bio-name'>Jaclyn Baer</h3>
+                                    Jaclyn, aka “Jax” has been with The Pearl Experience for 4 years. Not only did The Pearl Experience change her course direction, but she has heard a call to help keep the message alive at this season in her life. She earned her undergrad degree in Kinesiology from Cal State Fullerton and is now pursuing her MA in Biblical Counseling at Gateway Seminary. Jax has been mentored by both Roxanna and Dr. Grimes on a personal level.  Having experienced a very dark season of bitterness after her parents’ divorce and then again in college while involved in a relationship with an addict, Jax holds a heartbeat for hurting girls and women and desires to use her admin and writing/speaking skills to help them get to the help their heart longs for. Jax handles the administrative aspects of the Pearl Experience, teaches and writes on various Pearl topics.
+                                </div>
+                                <div class='bio-img'>
+                                    <img src="<?php echo $imageArray["url"];?>/JaclynPearl.JPG" alt="services offered" width="232" height="300" class="alignnone size-medium wp-image-459" />
                                 </div>
                             </div>
+                            <div class='about-us-divider'></div>
+                            <div class='bio-container'>
+                                <div class='bio'>
+                                    <h3 class='bio-name'>Dorene Braun</h3>​
+                                    Dorene serves as the Office Manager at the Warehouse, assisting with the client intake and scheduling process, as well as providing administrative support and assisting with workshops.  Dorene has a professional background as a pharmacy technician, and also previously worked in sales for Gallo wines.  Dorene is married with five children, and is passionate about helping people get the help that they need at the Warehouse.
+                                </div>
+                                <div class='bio-img'>
+                                    <img src="<?php echo $imageArray["url"];?>/Darlene.jpg" alt="services offered" width="232" height="300" class="alignnone size-medium wp-image-459" />
+                                </div>
+                            </div>
+                        </div>
                         </section>
                     </div><!-- end content -->
                 </div><!-- end primary -->

@@ -17,19 +17,19 @@ get_header(); ?>
                             <div class="about-us-hero-img"></div>
                         </div> -->
                         <section class='main-content'>
-                            <div>
+                            <div class='shop-content-container'>
                                 <div class='product'>
                                     <?php $imageArray = wp_upload_dir();?>
                                     <img class='product-img' src="<?php echo $imageArray["url"];?>/Relationship-Matters.jpg" />
                                     <div class='product-info'>
                                         <h1 class='product-title'>Relationship Matters</h1>
                                         <h2 class='product-author'>By: Dr. Guy Grimes</h2>
-                                        <p class='product-price'>$15.99</p>
+                                        <p class='product-price'>$8.15</p>
                                         <div class='product-description'>
-                                            Long-lasting relationships are struggling in the church and throughout all American walks of life. The divorce rate has been declining over the past ten years, but only because there are fewer marriages. People are insecure and tentative when it comes to long-term relationships and marriage commitment. There are fewer and fewer examples of healthy relationships and truly happy marriages.
+                                            Long-lasting relationships are struggling in the church and throughout all American walks of life. The divorce rate has been declining over the past ten years, but only because there are fewer marriages. People are insecure and tentative when it comes to long-term relationships and marriage commitment. There are fewer and fewer examples of healthy relationships and truly happy marriages. Dr. Grimes speaks straightforward with biblical truths he has mined over thirty years of ministry and relationship counseling. If you're looking for a romantically inspired approach - this isn't it. But if you are tired of romanticized book ends, you are ready for his practical and solution-oriented approach to making relationships last.
                                         </div>
                                         <div>
-                                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="paypal"><input type="hidden" name="cmd" value="_cart"><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="business" value="guy@therelationshipwarehouse.com"><input type="hidden" name="item_name" value="Relationship Matters- By Dr. Guy Grimes"><input type="hidden" name="item_number"><input type="hidden" name="amount" value="15.99"><input type="hidden" name="button_subtype" value="products"><input type="hidden" name="shipping" value="3.25"><input type="hidden" name="add" value="1"><input type="submit" value='Add to Cart' border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"><input type="hidden" name="bn" value="godaddy_hosting_WPS_US"><img alt="" style="border-width: 0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"></form>
+                                            <a class='add-to-cart' href='https://www.amazon.com/Relationship-Matters-Foundations-lasting-relationships/dp/1548074683/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1547428245&sr=8-1'>Buy Now</a>
                                         </div>
                                     </div>
 
@@ -39,12 +39,12 @@ get_header(); ?>
                                     <img class='product-img' src="<?php echo $imageArray["url"];?>/Pearl.jpg" />
                                     <div class='product-info'>
                                         <h1 class='product-title'>Pearl</h1>
-                                        <h2 class='product-author'>By: Roxanna Dian Grimes</h2>
+                                        <h2 class='product-author'>By: Roxanna Grimes</h2>
                                         <p class='product-price'>$12.99</p>
                                         <div class='product-description'>
                                             Pearl, a beautiful narrative, compels the heart of a girl to take a transforming journey into being found, known, loved, and valued. Pearl is like reading a love letter straight from God and finding out who you really are! You are the valued daughter of a kind and attentive king and the recipient of a fulfilling inheritance. Much like the parasite that finds its way into an oyster to eventually become a pearl, your parasites of loss, neglect, rejection, disappointment, and betrayal can be formed into beautiful pearls too. The comforting presence of this father and king is more enduring than image overhauls, validation, romance, food, career, pills, needles, sex, pornography, and alcohol.                                        </div>
                                         <div>
-                                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="paypal"><input type="hidden" name="cmd" value="_cart"><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="business" value="guy@therelationshipwarehouse.com"><input type="hidden" name="item_name" value="Pearl- The Art of Being Found, Loved and Valued in the Heart of God By Roxanna Grimes"><input type="hidden" name="item_number"><input type="hidden" name="amount" value="12.99"><input type="hidden" name="button_subtype" value="products"><input type="hidden" name="shipping" value="3.25"><input type="hidden" name="add" value="1"><input type="submit" value='Add to Cart' border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"><input type="hidden" name="bn" value="godaddy_hosting_WPS_US"><img alt="" style="border-width: 0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"></form>
+                                            <a class='add-to-cart' href='https://www.amazon.com/Pearl-being-found-loved-valued/dp/1548074721/ref=sr_1_1?ie=UTF8&qid=1547428075&sr=8-1&keywords=pearl+by+roxanna+grimes'>Buy Now</a>
                                         </div>
                                     </div>
 
@@ -54,12 +54,13 @@ get_header(); ?>
                                     <img class='product-img' src="<?php echo $imageArray["url"];?>/PearlWorkbook.jpg" />
                                     <div class='product-info'>
                                         <h1 class='product-title'>Pearl A Reflective Guide</h1>
-                                        <h2 class='product-author'>By: Roxanna Dian Grimes</h2>
-                                        <p class='product-price'>$19.95</p>
+                                        <h2 class='product-author'>By: Roxanna Grimes</h2>
+                                        <p class='product-price'>$27.33</p>
                                         <div class='product-description'>
-                                            Pearl, a beautiful narrative, compels the heart of a girl to take a transforming journey into being found, known, loved, and valued. Pearl is like reading a love letter straight from God and finding out who you really are! You are the valued daughter of a kind and attentive king and the recipient of a fulfilling inheritance. Much like the parasite that finds its way into an oyster to eventually become a pearl, your parasites of loss, neglect, rejection, disappointment, and betrayal can be formed into beautiful pearls too. The comforting presence of this father and king is more enduring than image overhauls, validation, romance, food, career, pills, needles, sex, pornography, and alcohol.                                        </div>
+                                            Readers Loved the message in Pearl The Art of Being Found, Loved and Valued in the Heart of God, but they wanted more when they asked, "This is what I want in my life, but how do I get there?" Roxanna set out to help women begin their journey with 35 Days through these pages; she says, "Every transformation requires an awareness, grieving, and action process. This Reflective Guide helps girls and women get the transformational concepts from the head to the heart. God wants to stain us with His love. This Guide is the staining process that is available to any girl or woman who desires lasting change." Roxanna Grimes uses her counseling and processing skills in the exercises laid out, and does so in a therapeutic approach. You will not feel like a student as you journey through these pages, but more like a recipient of soul care. The Reflective Guide is best used in a Workshop setting and includes directions on how to do this in a beautiful context with royal images and value exercises. Also included is a 35 Day Quiet Time Guide for Building a Home in your Heart with Jesus.
+                                        </div>
                                         <div>
-                                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="paypal"><input type="hidden" name="cmd" value="_cart"><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="business" value="guy@therelationshipwarehouse.com"><input type="hidden" name="item_name" value="Pearl- A Reflective Guide"><input type="hidden" name="item_number"><input type="hidden" name="amount" value="19.95"><input type="hidden" name="button_subtype" value="products"><input type="hidden" name="shipping" value="3.50"><input type="hidden" name="add" value="1"><input type="submit" value='Add to Cart' border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"><input type="hidden" name="bn" value="godaddy_hosting_WPS_US"><img alt="" style="border-width: 0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"></form>
+                                            <a class='add-to-cart' href='https://www.amazon.com/Pearl-Reflective-Guide-Finding-IDENTITY/dp/1548187836/ref=sr_1_fkmr0_4?ie=UTF8&qid=1547428212&sr=8-4-fkmr0&keywords=pearl+workbook+by+roxanna+grimes'>Buy Now</a>
                                         </div>
                                     </div>
 
